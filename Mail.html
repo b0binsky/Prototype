@@ -1,18 +1,19 @@
 <head>
     <link rel="stylesheet" href="Mail.css">
     <script src="logic.js"></script>
-    <div class="navigation">
-        <h1>P.H.I.S.H</h1>
-        <button onclick="reset()">Reset</button>
-        <a href="Index.html">Home</a>
-        <a href="feedback.html">Feedback</a>
-      </div>
 </head>
 
 <body>
+  <div class="navigation">
+    <h1>P.H.I.S.H</h1>
+    <a href="Index.html">Home</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
+
     <div id="message-box" class="message-box"></div>
     <div class="controls">
         <button>Previous</button>
+        <button onclick="reset()">Reset</button>
         <button>Next</button>
     </div>
     <div class="email-box">
@@ -21,31 +22,34 @@
       <table class="centered">
         <tr>
           <th>TECH 120</th>
-          <td><a href="Safe.html" target="_blank">Assignment 9 is due on Friday</a></td>
+          <td><a href="Safe.html">Assignment 9 is due on Friday</a></td>
           <td><button class="wrong" onclick="wrong()">report</button></td>
         </tr>
         <tr>
           <th>Paypal, Immediate Action Required</th>
-          <td><a href="Unsafe.html" target="_blank">Yo-ur Paypal p-assw-ord has been comp-romise-d, cl-ick here to res-et pass word</a></td>
+          <td><a href="Unsafe.html">Yo-ur Paypal p-assw-ord has been comp-romise-d, cl-ick here to res-et pass word</a></td>
           <td><button class="correct" onclick="correct()">report</button></td>
         </tr>
         <tr>
           <th>ECET 337</th>
-          <td><a href="Safe.html" target="_blank">Activity summary for Spring 2025 ECET 33700-006 LEC</a></td>
+          <td><a href="Safe.html">Activity summary for Spring 2025 ECET 33700-006 LEC</a></td>
           <td><button class="wrong" onclick="wrong()">report</button></td>
         </tr>
         <tr>
           <th>MET 245</th>
-          <td><a href="Safe.html" target="_blank">Grades for Exam 2 are out on BrightSpace</a></td>
+          <td><a href="Safe.html">Grades for Exam 2 are out on BrightSpace</a></td>
           <td><button class="wrong" onclick="wrong()">report</button></td>
         </tr>
         <tr>
           <th>appple.com</th>
-          <td><a href="Unsafe.html" target="_blank">Click here to claim FREE unreleased iPhone 18 S Plus SE Pro Max Max</a></td>
+          <td><a href="Unsafe.html">Click here to claim FREE unreleased iPhone 18 S Plus SE Pro Max Max</a></td>
           <td><button class="correct" onclick="correct()">report</button></td>
         </tr>
       </table>
     </div>
+    <footer class="credits">
+      <p>Created by Reesa Hronchek, Brian Hou, Ahmed Yousef, Henry Kaplan, and Adam Abdallah © 2025</p>
+    </footer>
   </body>
   </html>
   

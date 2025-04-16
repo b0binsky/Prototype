@@ -1,5 +1,54 @@
-.centered{
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #5e2a84, #3b1d5a, #1a0e2a, #000000);
+    color: #f8e6ff;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.centered {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4rem;
+    color: #f3cfff;
+    text-shadow: 0 0 10px #f3cfff, 0 0 20px #f8d9ff;
+    animation: pulse 2s infinite;
+}
+
+a {
     position: absolute;
-    left: 50%;
-    top: 50%;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background: #e0b3ff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 4px 15px rgba(224, 179, 255, 0.6);
+    transition: all 0.3s ease;
+  }
+  
+  a:hover {
+    background: #f3cfff;
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #f3cfff;
+  }
+
+@keyframes pulse {
+    0% { text-shadow: 0 0 5px #f3cfff, 0 0 10px #f8e6ff; }
+    50% { text-shadow: 0 0 20px #f8e6ff, 0 0 40px #ffffff; }
+    100% { text-shadow: 0 0 5px #f3cfff, 0 0 10px #f8e6ff; }
 }

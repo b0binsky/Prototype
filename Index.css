@@ -1,10 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
 
+.navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(46, 16, 65, 0.95);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.navigation h1 {
+    margin: 0;
+    font-size: 1.8em;
+    background: linear-gradient(90deg, #ffffff, #e0b3ff, #d7a1f9);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navigation a {
+    color: #f8e6ff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #f3cfff;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Orbitron', sans-serif;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(135deg, #5e2a84, #3b1d5a, #1a0e2a, #000000);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -17,13 +50,16 @@ body {
 h1 {
     font-size: 3.5em;
     margin-bottom: 60px;
-    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+    background: linear-gradient(90deg, #ffffff, #e0b3ff, #d7a1f9);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px #f3cfff, 0 0 20px #f8d9ff;
     animation: pulse 2s infinite;
 }
 
 .button {
     display: inline-block;
-    background: #00ffff;
+    background: #e0b3ff;
     color: #000;
     padding: 15px 40px;
     margin: 15px;
@@ -31,19 +67,19 @@ h1 {
     border: none;
     border-radius: 12px;
     text-decoration: none;
-    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.6);
+    box-shadow: 0 4px 15px rgba(224, 179, 255, 0.6);
     transition: all 0.3s ease;
 }
 
 .button:hover {
-    background: #00d1d1;
+    background: #f3cfff;
     transform: scale(1.05);
-    box-shadow: 0 0 25px #00ffff;
+    box-shadow: 0 0 25px #f3cfff;
 }
 
 /* Glowing animation for title */
 @keyframes pulse {
-    0% { text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff; }
-    50% { text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff; }
-    100% { text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff; }
+    0% { text-shadow: 0 0 5px #f3cfff, 0 0 10px #f8e6ff; }
+    50% { text-shadow: 0 0 20px #f8e6ff, 0 0 40px #ffffff; }
+    100% { text-shadow: 0 0 5px #f3cfff, 0 0 10px #f8e6ff; }
 }

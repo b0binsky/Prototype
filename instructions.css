@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #5e2a84, #3b1d5a, #1a0e2a, #000000);
+    color: #f8e6ff;
+    padding-top: 80px; /* Adjust to leave room for fixed navbar */
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    color: #f3cfff;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px #f3cfff, 0 0 20px #f8d9ff;
+    animation: pulse 2s infinite;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #d7a1f9;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-shadow: 0 0 1px #f3cfff, 0 0 20px #f8d9ff;
+}
+
+@keyframes pulse {
+    0% { text-shadow: 0 0 5px #f3cfff, 0 0 10px #f8e6ff; }
+    50% { text-shadow: 0 0 20px #f8e6ff, 0 0 40px #ffffff; }
+    100% { text-shadow: 0 0 5px #f3cfff, 0 0 10px #f8e6ff; }
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(46, 16, 65, 0.95); /* Deep semi-transparent purple */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.navigation h1 {
+    margin: 0;
+    font-size: 1.8em;
+    background: linear-gradient(90deg, #ffffff, #e0b3ff, #d7a1f9);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navigation a {
+    color: #f8e6ff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #f3cfff;
+}
+
+.main-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    margin-top: 120px; 
+}
