@@ -1,0 +1,17 @@
+<head>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    Feedback:
+    <input type=text name=name id=name>
+    <input type=submit onclick="sheets()">
+  </body>
+  
+  <script>
+    function sheets() {
+      var inputOneValue = document.getElementById('feedback').value;
+  
+      google.script.run
+       .addProduct(inputOneValue, inputTwoValue);
+    };
+  </script>
