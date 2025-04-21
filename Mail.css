@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
 .navigation {
-  position: fixed;
-  top: 0;
+  position: static;
   width: 100%;
   background: rgba(46, 16, 65, 0.95);
   padding: 15px 30px;
@@ -51,7 +50,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #5e2a84, #3b1d5a, #1a0e2a, #000000);
     color: #f8e6ff;
-    padding-top: 100px; /* for fixed nav */
     margin: 0;
   }
 
@@ -176,15 +174,33 @@ h2 {
   }
 
   .message-box {
-    display: none; 
-    background-color: #f8d7da;
-    color: #721c24;
-    padding: 10px;
-    border: 1px solid #f5c6cb;
-    border-radius: 5px;
-    margin-top: 20px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(145deg, #e0b3ff, #5e2a84);
+    color: #ffffff;
+    padding: 20px 30px;
+    border: 2px solid #f3cfff;
+    border-radius: 15px;
     font-weight: bold;
     text-align: center;
+    box-shadow: 0 0 25px rgba(243, 207, 255, 0.7), 0 0 50px rgba(224, 179, 255, 0.4);
+    z-index: 2000;
+    font-size: 1.2rem;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -60%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
   }
 
   .credits {

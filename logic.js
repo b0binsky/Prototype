@@ -19,3 +19,7 @@ function reset(){
     points = 0;
     messageBox.style.display = 'none';
 }
+
+function goBack(){
+    window.history.back();
+}

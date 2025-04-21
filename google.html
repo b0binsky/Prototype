@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="google.css">
+    <script src="logic.js"></script>
+</head>
+
+<body>
+  <div class="navigation">
+    <h1>P.H.I.S.H</h1>
+    <a href="index.html">Home</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfP2tlb3KTzYOJzvVMlR2bsT7Fh448_ha8P7GH8fdP_sE7MYQ/viewform?usp=header">Feedback</a>
+  </div>
+
+  <div id="message-box" class="message-box"></div>
+  <div class="controls">
+    <a href="Mail.html"><button>Previous</button></a>
+    <button onclick="reset()">Reset</button>
+    <a href="google.html"><button>Next</button></a>
+    </div>
+
+  <header>
+    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo" class="google-logo" />
+    <div class="search-bar">
+      <input type="text" placeholder="Search Google or type a URL" />
+    </div>
+  </header>
+
+  <main>
+    <div class="search-result">
+        <a href="Safe.html" class="title">Amazon.com. Spend less. Smile more.</a>
+        <div class="link">https://www.amazon.com</div>
+        <div class="snippet">Fast shipping. Shop deals ending soon. Shop popular deals. Sign in for the best experience. Premium home upgrades.</div>
+        <button class="wrong" onclick="wrong()">report</button>
+    </div>
+
+    <div class="search-result">
+        <a href="Unsafe.html" class="title">Amazon.con. Spend more. Smile less.</a>
+        <div class="link">https://www.amazom.con</div>
+        <div class="snippet">Fast shipping. Shop deals ending soon. Shop popular deals. Sign in for the best experience. Premium home upgrades.</div>
+        <button class="correct" onclick="correct()">report</button>
+    </div>
+
+    <div class="search-result">
+        <a href="Safe.html" class="title">Amazon (@amazon) . X </a> 
+        <div class="link">https://twitter.com/amazon</div>
+        <div class="snippet">Official Twitter Feed of Amazon.</div>
+        <button class="wrong" onclick="wrong()">report</button>
+    </div>
+  </main>
+
+  <footer>
+    Created by Reesa Hronchek, Brian Hou, Ahmed Yousef, Henry Kaplan, and Adam Abdallah © 2025 - This is a replica of the Google search page
+  </footer>
+
+</body>
+</html>
